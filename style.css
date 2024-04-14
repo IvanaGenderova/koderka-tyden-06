@@ -1,0 +1,183 @@
+html { box-sizing: border-box;}
+*, ::after, ::before { box-sizing: inherit;}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Mobile */
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight:300;
+    color: #8B8B8B;
+    text-align: center;
+    background-color: #FAFAFA;
+    line-height: 21px;
+    margin: 0;
+}
+
+.happy-traveler { 
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 37px; 
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 21px;
+    margin-top: 60px;
+ }
+
+ .h2-popisok {
+    margin-bottom: 28px;
+ }
+
+.kontajner {
+    max-width: 1200px;
+    margin: 0 auto 57px auto;
+    background-color: #FAFAFA;
+    border: 1px solid #dfdcdc;
+    text-align: center;
+    padding: 20px;
+}
+    
+.happy-traveler{
+    width: 350px;
+    height: 290px;
+    margin-top:60px;
+    margin-right:75px;
+    margin-left: 75px;
+}
+
+.tlacitka {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tlacitka a {
+    display: block;
+    padding: 11px 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: max-content;
+    color: white;
+}
+
+.tlacitko-1 {
+    background-color: #407BFF;
+}
+
+.tlacitko-2 {
+    background-color: #8B8B8B;
+}
+
+.obdelnik{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    background-color:#FFFFFF;
+    color: #8B8B8B;
+}
+
+.obdelnik img {
+    width: 45px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 640px) {
+
+    .tlacitka a {
+        display: inline-block;
+    }
+
+    .tlacitka a.tlacitko-1 {
+        margin-right: 20px;
+    } 
+
+    .sluzby {
+        display: flex;
+    }
+
+    .obdelnik {
+        flex-direction: column;
+        padding-top: 40px;
+        margin-right: 20px;
+    }
+
+    .obdelnik:last-child {
+        margin-right: 0;
+    }
+
+    .obdelnik img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+
+    .kontajner {
+        padding: 80px;
+    }
+
+    .uvodni-blok {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .uvodni-text {
+        text-align: left;
+     }
+
+    .sekcia-sluzby {
+        display: flex;
+    }
+
+    .sekcia-sluzby-doprava {
+        flex-direction: row-reverse;
+    }
+
+    .sekcia-sluzby-doprava .sekcia-sluzby-text {
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .sekcia-sluzby-dolava .sekcia-sluzby-text {
+        text-align: left;
+        padding-right: 60px;
+    }
+
+    .sluzby {
+        flex-direction: row;
+    }
+
+    
+}
